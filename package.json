@@ -1,0 +1,12 @@
+{
+  "bundleDependencies": false,
+  "dependencies": {
+    "@types/node": "*"
+  },
+  "deprecated": false,
+  "description": "TypeScript definitions for node-forge",
+  "main": "",
+  "name": "@types/node-forge",
+  "private": true,
+  "types": "index.d.ts"
+}
