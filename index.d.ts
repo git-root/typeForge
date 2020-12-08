@@ -211,6 +211,8 @@ declare module "node-forge" {
             version: number;
             serialNumber: string;
             signature: any;
+            signatureOid: any;
+            signatureParameters: any;
             siginfo: any;
             validity: {
                 notBefore: Date;
