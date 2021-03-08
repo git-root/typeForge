@@ -235,6 +235,12 @@ declare module "node-forge" {
             asn1extensions: any[];
             privateKey: PrivateKey;
             publicKey: PublicKey;
+            subjectPublicKeyInfo: {
+                publicKeyAlgorithm: any;
+                publicKeyAlgorithmOid: any;
+                publicKeyExponent: any;
+                publicKeyModulus: any;
+            };
             md: any;
             /**
              * Sets the subject of this certificate.
@@ -404,7 +410,7 @@ declare module "node-forge" {
 
         function privateKeyToAsn1(privateKey: PrivateKey): asn1.Asn1;
 
-        function publicKeyFromAsn1(publicKey: asn1.Asn1): PublicKey;
+        function publicKeyFromAsn1(publicKey: asn1.Asn1, pKeyCapture?: {[key: string]: any | undefined;}): PublicKey;
 
         function publicKeyToAsn1(publicKey: PublicKey): asn1.Asn1;
 
