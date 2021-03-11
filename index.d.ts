@@ -222,12 +222,14 @@ declare module "node-forge" {
                 getField(sn: string | CertificateFieldOptions): any;
                 addField(attr: CertificateField): void;
                 attributes: any[];
+                uniqueId: any,
                 hash: any;
             };
             subject: {
                 getField(sn: string | CertificateFieldOptions): any;
                 addField(attr: CertificateField): void;
                 attributes: any[];
+                uniqueId: any,
                 hash: any;
             };
             extensions: any[];
